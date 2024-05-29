@@ -1,32 +1,24 @@
-public class Espeon extends Eevee{
-    private String tipo;
 
-    //getters e setters
-    public String getTipo() {
-        return tipo;
+ public class Espeon extends Eevee {   
+    public Espeon(String tipo, int altura, int hp, double peso) {
+        super(tipo, altura, hp, peso);
     }
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+
+    @Override
+    public void imprimir() {
+        super.imprimir();
     }
     
-    //metodo construtor
-    public Espeon(double peso, int altura, int hp, String tipo){
-        super(peso, altura, hp);
-        this.tipo = tipo;
-    }
-
-    public Espeon(){
-        
-    }
-
-    //metodos
+    @Override
     public String ataque(){
-        return ataque();
+        return "Syncronize";
     }
-    public String especial(){
-        return especial();
-    }
+    @Override
     public String defesa(){
-        return defesa();
+        return "Defesa psiquica";
+    }
+    @Override
+    public String especial(){
+        return "Magic Bounce";
     }
 }

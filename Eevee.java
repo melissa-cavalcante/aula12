@@ -5,7 +5,7 @@ public class Eevee {
     protected String tipo;
 
     //metodo construtor
-    public Eevee(double peso, int altura, int hp, String tipo){
+    public Eevee(String tipo, int altura, int hp, double peso){
         this.peso = peso;
         this.altura = altura;
         this.hp = hp;

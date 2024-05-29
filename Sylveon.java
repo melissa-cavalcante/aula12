@@ -1,30 +1,23 @@
 public class Sylveon extends Eevee{
-    private String tipo;
-
-    //metodo construtor
-    public Sylveon(String tipo){
-        this.tipo = tipo;
+    public Sylveon(String tipo, int altura, int hp, double peso) {
+        super(tipo, altura, hp, peso);
     }
 
-    public Sylveon(){
-        
+    @Override
+    public void imprimir() {
+        super.imprimir();
     }
 
-    //getters e setters
-    public String getTipo() {
-        return tipo;
-    }
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-    //metodos
+    @Override
     public String ataque(){
-        return ataque();
+        return "Cute charm";
     }
-    public String especial(){
-        return especial();
-    }
+    @Override
     public String defesa(){
-        return defesa();
+        return "Defesa de fada";
+    }
+    @Override
+    public String especial(){
+        return "Pixilate";
     }
 }

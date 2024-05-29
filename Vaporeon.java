@@ -1,30 +1,23 @@
 public class Vaporeon extends Eevee{
-    private String tipo;
-
-    //metodo construtor
-    public Vaporeon(String tipo){
-        this.tipo = tipo;
+    public Vaporeon(String tipo, int altura, int hp, double peso) {
+        super(tipo, altura, hp, peso);
     }
 
-    public Vaporeon(){
-        
+    @Override
+    public void imprimir() {
+        super.imprimir();
     }
-
-    //getters e setters
-    public String getTipo() {
-        return tipo;
-    }
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-    //metodos
+    
+    @Override
     public String ataque(){
-        return ataque();
+        return "Water absorb";
     }
-    public String especial(){
-        return especial();
-    }
+    @Override
     public String defesa(){
-        return defesa();
+        return "Defesa de agua";
+    }
+    @Override
+    public String especial(){
+        return "Hydration";
     }
 }

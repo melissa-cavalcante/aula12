@@ -1,30 +1,23 @@
 public class Jolteon extends Eevee {
-    private String tipo;
-
-    //metodo construtor
-    public Jolteon(String tipo){
-        this.tipo = tipo;
+    public Jolteon(String tipo, int altura, int hp, double peso) {
+        super(tipo, altura, hp, peso);
     }
 
-    public Jolteon(){
-        
+    @Override
+    public void imprimir() {
+        super.imprimir();
     }
-
-    //getters e setters
-    public String getTipo() {
-        return tipo;
-    }
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-    //metodos
+    
+    @Override
     public String ataque(){
-        return ataque();
+        return "Trovoada- Thunder Shock";
     }
-    public String especial(){
-        return especial();
-    }
+    @Override
     public String defesa(){
-        return defesa();
+        return "Carga- Wild Charge";
+    }
+    @Override
+    public String especial(){
+        return "Raio- Thunder";
     }
 }

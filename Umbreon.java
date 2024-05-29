@@ -1,30 +1,23 @@
 public class Umbreon extends Eevee{
-    private String tipo;
-
-    //metodo construtor
-    public Umbreon(String tipo){
-        this.tipo = tipo;
+    public Umbreon(String tipo, int altura, int hp, double peso) {
+        super(tipo, altura, hp, peso);
     }
 
-    public Umbreon(){
-        
+    @Override
+    public void imprimir() {
+        super.imprimir();
     }
 
-    //getters e setters
-    public String getTipo() {
-        return tipo;
-    }
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-    //metodos
+    @Override
     public String ataque(){
-        return ataque();
+        return "Syncronize";
     }
-    public String especial(){
-        return especial();
-    }
+    @Override
     public String defesa(){
-        return defesa();
+        return "Defesa noturna";
+    }
+    @Override
+    public String especial(){
+        return "Inner focus";
     }
 }

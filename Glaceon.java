@@ -1,30 +1,23 @@
 public class Glaceon extends Eevee{
-    private String tipo;
-
-    //metodo construtor
-    public Glaceon(String tipo){
-        this.tipo = tipo;
+    public Glaceon(String tipo, int altura, int hp, double peso) {
+        super(tipo, altura, hp, peso);
     }
 
-    public Glaceon(){
-        
+    @Override
+    public void imprimir() {
+        super.imprimir();
     }
 
-    //getters e setters
-    public String getTipo() {
-        return tipo;
-    }
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-    //metodos
+    @Override
     public String ataque(){
-        return ataque();
+        return "Snow cloak";
     }
-    public String especial(){
-        return especial();
-    }
+    @Override
     public String defesa(){
-        return defesa();
+        return "Defesa de gelo";
+    }
+    @Override
+    public String especial(){
+        return "Ice Body";
     }
 }

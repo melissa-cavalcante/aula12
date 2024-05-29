@@ -1,30 +1,23 @@
 public class Leafeon extends Eevee{
-    private String tipo;
-
-    //metodo construtor
-    public Leafeon(String tipo){
-        this.tipo = tipo;
+    public Leafeon(String tipo, int altura, int hp, double peso) {
+        super(tipo, altura, hp, peso);
     }
 
-    public Leafeon(){
-        
+    @Override
+    public void imprimir() {
+        super.imprimir();
     }
-
-    //getters e setters
-    public String getTipo() {
-        return tipo;
-    }
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-    //metodos
+    
+    @Override
     public String ataque(){
-        return ataque();
+        return "Leaf guard";
     }
-    public String especial(){
-        return especial();
-    }
+    @Override
     public String defesa(){
-        return defesa();
+        return "Defesa de planta";
+    }
+    @Override
+    public String especial(){
+        return "Chlorophyll";
     }
 }

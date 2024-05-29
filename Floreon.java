@@ -1,30 +1,23 @@
 public class Floreon extends Eevee{
-    private String tipo;
-
-    //metodo construtor
-    public Floreon(String tipo){
-        this.tipo = tipo;
+    public Floreon(String tipo, int altura, int hp, double peso) {
+        super(tipo, altura, hp, peso);
     }
 
-    public Floreon(){
-        
+    @Override
+    public void imprimir() {
+        super.imprimir();
     }
-
-    //getters e setters
-    public String getTipo() {
-        return tipo;
-    }
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-    //metodos
+    
+    @Override
     public String ataque(){
-        return ataque();
+        return "Flash Fire";
     }
-    public String especial(){
-        return especial();
-    }
+    @Override
     public String defesa(){
-        return defesa();
+        return "Carga- Fire charge";
+    }
+    @Override
+    public String especial(){
+        return "Chama- Flame";
     }
 }
